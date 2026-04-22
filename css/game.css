@@ -1,0 +1,150 @@
+#game-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #222; 
+}
+
+#lcd-screen {
+    width: 500px;
+    height: 350px;
+    background-color: #a8b3a4; 
+    position: relative;
+    border: 15px solid #555;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+#ui-layer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgba(0,0,0,0.6);
+}
+
+#case {
+    width: 45px;
+    height: 60px;
+    background: #0055ff;
+    border: 2px solid #fff;
+    position: absolute;
+    transition: 0.05s;
+    z-index: 10;
+}
+
+.pos-tl { top: 60px;  left: 120px; }
+.pos-bl { top: 210px; left: 120px; }
+.pos-tr { top: 60px;  right: 120px; }
+.pos-br { top: 210px; right: 120px; }
+
+.br-player {
+    width: 80px;
+    height: 30px;
+    background: #333;
+    position: absolute;
+}
+.tl { top: 75px;  left: 0; }
+.bl { top: 225px; left: 0; }
+.tr { top: 75px;  right: 0; }
+.br { top: 225px; right: 0; }
+
+.disc {
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle, #fff 10%, #888 80%);
+    border-radius: 50%;
+    position: absolute;
+}
+/* Add this to your game.css */
+#start-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a8b3a4; /* Match the LCD color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Keep it on top */
+}
+
+#start-btn {
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    background-color: #333;
+    color: #a8b3a4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#start-btn:hover {
+    background-color: #0055ff;
+    color: white;
+}
+
+/* Custom Game Over Screen */
+#game-over-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(168, 179, 164, 0.9);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    z-index: 101;
+    text-align: center;
+}
+
+/* 1. REPLACE THE CASE BOX WITH AN IMAGE */
+#case {
+    width: 50px;
+    height: 70px;
+    background-image: url('../assets/img/blu-ray-gloss-and-shine-case-template.png'); /* Put your filename here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 0.05s;
+    z-index: 10;
+}
+
+/* 2. REPLACE THE PLAYERS WITH IMAGES */
+.br-player {
+    width: 100px;
+    height: 40px;
+    background-image: url('../assets/img/bd-player.jpg'); /* Put your filename here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+/* 3. REPLACE THE DISCS WITH IMAGES */
+.disc {
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/img/BD-Disc.png'); /* Put your filename here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#start-overlay, #game-over-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a8b3a4; /* Match the LCD color perfectly */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+/* This ensures the Game Over screen stays hidden until the JS triggers it */
+#game-over-overlay {
+    display: none; 
+    z-index: 101;
+}

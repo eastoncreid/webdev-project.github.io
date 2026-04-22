@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blu-ray Catch Game</title>
+    <link rel="stylesheet" href="/startbootstrap-clean-blog-gh-pages/startbootstrap-clean-blog-gh-pages/css/game.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <div id="lcd-screen">
+            <div id="ui-layer">
+                <div>MOVIES: <span id="game-score">0</span></div>
+                <div id="game-msg">USE ARROW KEYS</div>
+            </div>
+            <div id="start-overlay">
+    <h2>BLU-RAY CATCHER</h2>
+    <button id="start-btn">INSERT DISC (START)</button>
+</div>
+
+<div id="game-over-overlay" style="display: none;">
+    <h2>Game Over!</h2>
+    <p>FINAL SCORE: <span id="final-score">0</span></p>
+    <button id="restart-btn">TRY AGAIN</button>
+</div>
+
+<div id="ui-layer">
+    <div>MOVIES: <span id="game-score">0</span></div>
+</div>
+
+<div id="case" class="pos-tl"></div>
+
+<div class="br-player tl"></div>
+<div class="br-player bl"></div>
+<div class="br-player tr"></div>
+<div class="br-player br"></div>
+
+<div id="disc-field"></div>
+        </div>
+    </div>
+
+    <script src="/startbootstrap-clean-blog-gh-pages/startbootstrap-clean-blog-gh-pages/js/game.js"></script>
+</body>
+</html>
