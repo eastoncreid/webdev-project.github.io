@@ -102,7 +102,7 @@
 #case {
     width: 50px;
     height: 70px;
-    background-image: url('../assets/img/blu-ray-gloss-and-shine-case-template.png'); /* Put your filename here */
+    background-image: url('../assets/img/BD_CASE.png'); /* Put your filename here */
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -114,7 +114,7 @@
 .br-player {
     width: 100px;
     height: 40px;
-    background-image: url('../assets/img/bd-player.jpg'); /* Put your filename here */
+    background-image: url('../assets/img/bd_player.jpg'); /* Put your filename here */
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -124,7 +124,7 @@
 .disc {
     width: 30px;
     height: 30px;
-    background-image: url('../assets/img/BD-Disc.png'); /* Put your filename here */
+    background-image: url('../assets/img/BD_Disc.png'); /* Put your filename here */
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
